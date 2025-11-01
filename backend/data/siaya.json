@@ -1,0 +1,34 @@
+{
+    "county": "Siaya",
+    "clans": [
+      {
+        "name": "Gem",
+        "description": "They form part of Jo Omolo cluster that moved into Western Kenya after a long sojourn in Bukooli area of Eastern Uganda. Currently clans in Gem include: Anyanga, Jouolo, Kawiri, Kathomo, Jouoga, Kanyiwuor, Kanyikwaya, Kagilo, Kaudha, Ojuodhi."
+      },
+      {
+        "name": "Alego",
+        "description": "These are Joka Jok group. Alego, the son of Muljuok, moved eastwards across River Yala to the area named Alego. Clans in Alego include: Seje, Jomur, Kakan, Kadenge, Kanyinek, Jokamwiru, Jokalenyjwok, Kanyingwe, Kanyajer, Sigoma, Maholo, Uradi, Uranga, Kisodhi, Ager, Ogelo, Omenya, Kamlagi, Jousonga, Jouwinwa, Kaluo, Ulafu, Joumaji, Kasipul, Jousere, Jounyore, Joumala, Jousula, Muer."
+      },
+      {
+        "name": "Ugenya",
+        "description": "They form part of Jok'omolo group who moved to Nyanza via the Akek hills in Samia. Jo-Ugenya moved directly to Alego in two waves. Clans of Ugenya: Joboro, Boro Mabura, Boro Kochola, Nyapuny, Kapuny Ma Kagoma, Kakumba, Jomasiro, Kageny Kanywaa, Kanyamuot (Agongu), Kanyalaro Kamrembo, Jouwal, Kamungare Kanyibonu, Karadolo, Kanyaudo, Josiranga, Jounwe, Masiro."
+      },
+      {
+        "name": "Asembo",
+        "description": "Clans include: Kanyikela, Kochieng', Karombo, Alwar, Obiero, Nyalianga, Kale, Kia, Kasabong, Komenya, Kanyigoro, Kabondo, Omia, Kolal, Kamito, Kokidi."
+      },
+      {
+        "name": "Uyoma",
+        "description": "Clans include: Kabudha, Katweng'a, Kobong', Kokwiri, and Kagwaa."
+      },
+      {
+        "name": "Yimbo",
+        "description": "These are Owiny conglomeration divided into two groups. One group led by Kisodhi and later by his son Owiny Sigoma. The second group led by Dimo, Owil and Munyejra. Clans in Yimbo: Jokaowanga, Kagwa, Imbo Ka Dimo, Dimu Mathuon, Oyugi, Bith, Anjogo, Omolo, Dieto, Mewaya, Marach, Ojuondo Muga."
+      },
+      {
+        "name": "Sakwa",
+        "description": "Clans include: Kamnara, Kowak, Kanyibinya, Kakuodi, Kaligaga, Jokahola, Jokalaka, Mayunje, Wayedhe, Nyagdimbwa, Wagongo, Nyagudi, Ramba, Abom."
+      }
+    ]
+  }
+  

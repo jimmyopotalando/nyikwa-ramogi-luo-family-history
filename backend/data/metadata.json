@@ -1,0 +1,46 @@
+{
+  "counties": [
+    {
+      "name": "Siaya",
+      "clans": [
+        "Gem",
+        "Alego",
+        "Ugenya",
+        "Asembo",
+        "Uyoma",
+        "Yimbo",
+        "Sakwa"
+      ]
+    },
+    {
+      "name": "Kisumu",
+      "clans": [
+        "Kajulu",
+        "Kisumo",
+        "Seme",
+        "Nyakach",
+        "Kano"
+      ]
+    },
+    {
+      "name": "Homabay",
+      "clans": [
+        "Karachuonyo",
+        "Kasipul",
+        "Kanyada",
+        "Kanyamwa",
+        "Kabwoch",
+        "Kabondo"
+      ]
+    },
+    {
+      "name": "Migori",
+      "clans": [
+        "Kadem",
+        "Karungu",
+        "Kamagambo",
+        "Kanyamkago"
+      ]
+    }
+  ]
+}

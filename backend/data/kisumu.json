@@ -1,0 +1,26 @@
+{
+    "county": "Kisumu",
+    "clans": [
+      {
+        "name": "Kajulu",
+        "description": "Clans include: Kadero, Agoro, Nyimon, Kaburwuon, Anyumba Konya, Menya, Misunga, Minwa, Nyikewo, Gok, Adhola, Jiey Opul, Okal, Ogonda, Obonyo Raduogo, Jiey Ajwang, Okun Silwal, Obungu, Sije, Osumba, Koko, Wadewa, Okun Wanyamba, Oteni, Midigo Aluoch, Awuor Ohinga Ouku, Omer Lakliech, Serateng, Seoriri, Awuor Ohinga."
+      },
+      {
+        "name": "Kisumo",
+        "description": "These are Joka-Jok group, they never reached Got Ramogi, led by Owidi and Omwa. Current clans in Kisumo: Jokaowidi, Rateng, Odago, Awino Mongereni (Puonja), Kamenya, Kanyamony, Konyango, Kamwanda, Rateng Muga, Karabok, Jokomwa, Kogony, Jokakiyier, Jokanyobala, Jokademba, Jokawagonga, Jokojwaya, Jokanyinjowi, Kanyuto, Korando, Ndago, Rombo, Otetini, Ajul, Jokamoth, Jokaembeda, Jokaako Kanyawegi, Onyango, Ogada, Ago, Oulu, Kadongo, Thure, Okulo Dawa."
+      },
+      {
+        "name": "Seme",
+        "description": "These are Jok’Jok group. The first party was led by Nyikal and his brother Rado. Clans of Seme: Kanyimon, Kasimori, Ombija, Kadianga, Konywera, Kokelo, Kopudo, Kochola, Kooyo, Kanyimedha, Otieno Kiswe, Kolunje, Wawaria, Karanyolongi, Kaluande, Kojwang, Kowee, Kadero, Kadulo, Karabuor, Kangor, Kamolo, Konjula, Kaila, Kombewa."
+      },
+      {
+        "name": "Nyakach",
+        "description": "These are Joka-Jok group. From Ramogi hill they were led by Elder called Oywa. They established a big settlement (Gunda bur) called Nyakach. Descendants of Oywa and followers known as Nyakach. Current clans: Kajimbo, Kandaria, Kasaye, Kabodho, Kajimbo, Kadianga, Koguta, Wasare, Kasae, Kokal, Kamwala Kogak, Kaguria, Gongo, Were, Lwanda, Nyapong Kanyango, Ojuando, Ochimbo, Miera, Okach, Abayo Awel, Rabok, Nyateng, Okumu, Mbudi, Achacha Kabuya, Omolo, Tombo, Kur, Nyimedha Owuor, Okudho, Aonye, Mwana, Nyaudo, Ramogi Owala, Nyiguta, Nyiduol, Ojunga, Oyoo, Ogwang, Obola, Omen, Obingo, Ngombe, Riany, Awuor, Oro, Damba."
+      },
+      {
+        "name": "Kano",
+        "description": "Among the late comers. Their time of arrival cannot be dated with certainty. Jokano were led south through Lira by a certain Obo. After a brief stay in Kaugagi, Jokano moved to Uyoma via Yimbo and Sakwa. They moved across Winam Gulf led by Adhoga and settled in Mirunda Bay at Kimira. They moved eastward towards present Kano plains, first welcomed by Jo-wang'aya under leaders Miaro and Kimienya. Current clans in Kano: Wangaya, Sidho Tura, Wasiese, Kidido, Kimira Mingonge Tinga, Kakola, Kamagaga Miranga, Kibigori, Nduru, Wawidhi, Rabuor Kanyagwal, Kobura, Kochieng, Raye, Okana Miumba, Kimira Kango, Kamreri, Kawamoya Kolwas, Wathyago, Kabar, Tura, Wanjare Ochieno, Siese, Olal, Kamidira, Kabonyo Kasagam, Komolo, Kawese, Kadiju, Komiti, Rae Kamirongo, Kochogo, Kakmie, Kobong’o Kamsua, Katolo, Watombori, Kanyipola."
+      }
+    ]
+  }
+  
