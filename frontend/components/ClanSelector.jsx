@@ -21,14 +21,17 @@ export default function ClanSelector({ county, onSelectClan, onBack }) {
           `${API_BASE_URL}/api/clans?county=${encodeURIComponent(county)}`
         );
 
+        // Parse JSON first
+        const data = await response.json();
+
         if (!response.ok) {
-          throw new Error(`Failed to fetch clans for ${county}`);
+          throw new Error(data.error || `Failed to fetch clans for ${county}`);
         }
 
-        const data = await response.json();
         setClans(data.clans || []);
       } catch (err) {
         setError(err.message);
+        setClans([]); // ensure no leftover clans show
       } finally {
         setLoading(false);
       }

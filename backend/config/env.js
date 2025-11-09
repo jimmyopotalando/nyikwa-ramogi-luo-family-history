@@ -26,8 +26,8 @@ requiredVars.forEach((key) => {
 const config = {
   // App info
   nodeEnv: process.env.NODE_ENV || "development",
-  port: process.env.PORT || 3000,
-  baseUrl: process.env.BASE_URL || "http://localhost:3000",
+  port: process.env.PORT || 5000,
+  baseUrl: process.env.BASE_URL || "http://localhost:5000",
 
   // M-Pesa settings
   mpesa: {
