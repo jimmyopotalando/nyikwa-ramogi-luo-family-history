@@ -24,7 +24,7 @@ const PORT = process.env.PORT || 5000;
 // -----------------------
 // Middleware
 // -----------------------
-app.use(cors({ origin: "*" })); // allow all origins for dev
+app.use(cors({ origin: "*" }));
 app.use(express.json());
 
 // -----------------------
@@ -48,7 +48,7 @@ const connectDB = async () => {
 connectDB();
 
 // -----------------------
-// Load metadata.json at startup and watch for changes
+// Load metadata.json and watch for changes
 // -----------------------
 const metadataPath = path.join(__dirname, "data", "metadata.json");
 
@@ -65,10 +65,8 @@ function loadMetadata() {
   }
 }
 
-// Initial load
 loadMetadata();
 
-// Watch for changes
 fs.watch(metadataPath, (eventType) => {
   if (eventType === "change") {
     console.log("🔄 metadata.json changed, reloading...");
@@ -77,16 +75,7 @@ fs.watch(metadataPath, (eventType) => {
 });
 
 // -----------------------
-// Routes
-// -----------------------
-
-// Test route
-app.get("/", (req, res) => {
-  res.send("Server is running!");
-});
-
-// -----------------------
-// GET clans by county
+// API Routes
 // -----------------------
 app.get("/api/clans", (req, res) => {
   const county = req.query.county;
@@ -106,9 +95,6 @@ app.get("/api/clans", (req, res) => {
   res.json({ clans: countyData.clans });
 });
 
-// -----------------------
-// POST comments
-// -----------------------
 app.post("/api/comments", (req, res) => {
   const { comment } = req.body;
   if (!comment || comment.trim() === "")
@@ -130,48 +116,27 @@ app.post("/api/comments", (req, res) => {
 });
 
 // -----------------------
-// POST donations (STK Push skeleton)
+// Serve Frontend (production) dynamically
 // -----------------------
-app.post("/api/donate", (req, res) => {
-  const { phoneNumber, amount } = req.body;
-  if (!phoneNumber || !amount)
-    return res.status(400).json({ message: "Phone number and amount are required" });
 
-  try {
-    const transactionRef = `DON-${Date.now()}`;
+// Dynamically find repo root and frontend dist
+const repoRoot = path.resolve(__dirname, "..");
+const frontendDist = path.join(repoRoot, "frontend", "dist");
 
-    const logDir = path.join(__dirname, "..", "logs");
-    if (!fs.existsSync(logDir)) fs.mkdirSync(logDir, { recursive: true });
+if (!fs.existsSync(frontendDist)) {
+  console.error("❌ Frontend dist folder not found:", frontendDist);
+} else {
+  console.log("✅ Serving frontend from:", frontendDist);
 
-    const logFile = path.join(logDir, "donations.log");
-    const logEntry = `${new Date().toISOString()} - Phone: ${phoneNumber}, Amount: ${amount}, Ref: ${transactionRef}\n`;
-    fs.appendFileSync(logFile, logEntry);
+  app.use(express.static(frontendDist));
 
-    res.json({
-      message: "Please check your phone and complete the M-Pesa payment.",
-      transactionRef,
-    });
-  } catch (err) {
-    console.error("Donation error:", err);
-    res.status(500).json({ message: "Failed to process donation" });
-  }
-});
+  app.get("*", (req, res) => {
+    res.sendFile(path.join(frontendDist, "index.html"));
+  });
+}
 
 // -----------------------
-// M-Pesa callbacks
-// -----------------------
-app.post("/api/payments/callback", (req, res) => {
-  console.log("Payment callback received:", req.body);
-  res.status(200).send("Callback received");
-});
-
-app.post("/api/donations/callback", (req, res) => {
-  console.log("Donation callback received:", req.body);
-  res.status(200).send("Donation callback received");
-});
-
-// -----------------------
-// Start server
+// Start Server
 // -----------------------
 app.listen(PORT, () => {
   console.log(`🚀 Server running on port ${PORT}`);
